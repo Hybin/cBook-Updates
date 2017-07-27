@@ -1,4 +1,4 @@
-
+# -*- coding: utf-8 -*-
 from urllib.request import urlopen
 from urllib.parse import quote
 from bs4 import BeautifulSoup
@@ -59,6 +59,6 @@ for i in srList:
 	item['icon']['path'] = getCover(i)
 	jsonOutput['items'].append(item)
 
-output = json.dumps(jsonOutput, indent=4)
+output = json.dumps(jsonOutput, ensure_ascii=False, indent=4)
 
 print(output)
