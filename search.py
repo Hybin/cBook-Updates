@@ -2,6 +2,7 @@
 from urllib.request import urlopen
 from urllib.parse import quote
 from bs4 import BeautifulSoup
+import re
 import json
 
 jsonOutput = {"items":[]}
@@ -18,16 +19,13 @@ srList = bsObj.find('ul', {'id':'searchResultList'}).find_all('li')
 
 # Get the title, author, cover and page address in each item
 def getTitle(i):
-	title = ''
-	titlePosition = i.find('h1').find('a').find_all('span')
-	for r in titlePosition:
-		title += r.string
-
+	titlePosition = i.find('h1').find('a')
+	title = re.sub(r'(\n|\s*)', '', titlePosition.get_text())
 	return title
 
 def getAuthor(i):
 	authorPosition = i.find('div', {'class':'search_r_info'}).find_all('p')[0].find('a')
-	author = authorPosition.string
+	author = re.sub(r'(\n|\s*)', '', authorPosition.get_text())
 	return author
 
 def getCover(i):
