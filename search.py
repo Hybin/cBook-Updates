@@ -49,13 +49,22 @@ item = {
     }
 }
 
-for i in srList:
-	item['title'] = getTitle(i)
-	item['subtitle'] = getAuthor(i)
-	item['arg'] = getPage(i)
+for r in srList:
+	item['title'] = getTitle(r)
+	item['subtitle'] = getAuthor(r)
+	item['arg'] = getPage(r)
 	item['autocomplete'] = item['title']
-	item['icon']['path'] = getCover(i)
+	item['icon']['path'] = getCover(r)
 	jsonOutput['items'].append(item)
+	item = {
+        "title": "",
+        "subtitle": "",
+        "arg": "",
+        "autocomplete": "",
+        "icon": {
+            "path": ""
+        }
+    }
 
 output = json.dumps(jsonOutput, ensure_ascii=False, indent=4)
 
