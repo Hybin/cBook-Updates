@@ -27,17 +27,16 @@ and you will get something like this:
 	/usr/bin:/usr/local/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Python.framework/Versions/3.5/bin:
 
 Now with the directory `/Library/Frameworks/Python.framework/Versions/3.5/bin`, you are able to find the exec `Python3.5`. 
-* Click the Alfred 3 -> Preferences -> Workflows
-* Click cBook Updates
-* Double click Script Filter and you will see:
+- Click the Alfred 3 -> Preferences -> Workflows
+- Click cBook Updates
+- Double click Script Filter and you will see:
 
 	function query {
-		/Library/Frameworks/Python.framework/Versions/3.5/bin/python3.5 - <<END
-		import search
-		search.query("{query}")
-		END
+	/Library/Frameworks/Python.framework/Versions/3.5/bin/python3.5 - <<END
+	import search
+	search.query("{query}")
+	END
 	}
-	
 	query
 
 Replace `/Library/Frameworks/Python.framework/Versions/3.5/bin/python3.5` with your own Python 3 path.
