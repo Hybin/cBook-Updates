@@ -31,6 +31,7 @@ Now with the directory `/Library/Frameworks/Python.framework/Versions/3.5/bin`, 
 - Click cBook Updates
 - Double click Script Filter and you will see:
 
+```Shell
 	function query {
 	/Library/Frameworks/Python.framework/Versions/3.5/bin/python3.5 - <<END
 	import search
@@ -38,7 +39,7 @@ Now with the directory `/Library/Frameworks/Python.framework/Versions/3.5/bin`, 
 	END
 	}
 	query
-
+```
 Replace `/Library/Frameworks/Python.framework/Versions/3.5/bin/python3.5` with your own Python 3 path.
 
 ## Usage
