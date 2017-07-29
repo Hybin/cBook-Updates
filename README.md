@@ -1,9 +1,13 @@
 # cBook-Updates
 
 [![author](https://img.shields.io/badge/Hybin-STU-red.svg)](https://github.com/Hybin)
+
 [![Language](https://img.shields.io/badge/Python-3.5-yellow.svg)](https://www.python.org)
+
 ![Version](https://img.shields.io/badge/version-0.1-green.svg)
+
 ![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
+
 [![Download](https://img.shields.io/badge/downloads-87k-brightgreen.svg)](https://raw.githubusercontent.com/Hybin/cBook-Updates/master/cBook%20Updates.alfredworkflow)
 
 This is a **workflow** for Alfred. In order to get the updating info of your favorite books, it would be an awesome tool for you to check the updating information and read the latest chapter(s) right now!
@@ -31,13 +35,15 @@ Now with the directory `/Library/Frameworks/Python.framework/Versions/3.5/bin`, 
 * Click cBook Updates
 * Double click Script Filter and you will see:
 
-	function query {
-	/Library/Frameworks/Python.framework/Versions/3.5/bin/python3.5 - <<END
-	import search
-	search.query("{query}")
-	END
-	}
-	query
+<pre><code>
+function query {
+/Library/Frameworks/Python.framework/Versions/3.5/bin/python3.5 - <<END
+import search
+search.query("{query}")
+END
+}
+query
+</code></pre>
 
 Replace `/Library/Frameworks/Python.framework/Versions/3.5/bin/python3.5` with your own Python 3 path.
 
@@ -57,7 +63,7 @@ The workflow requires constant internet connection.
 
 ## ChangeLog
 
-####v0.1(2017-07-29)
+###v0.1(2017-07-29)
 
 * release version 0.1
 
