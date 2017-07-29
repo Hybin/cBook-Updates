@@ -62,7 +62,7 @@ The workflow requires constant internet connection.
 
 ## ChangeLog
 
-### v0.1(2017-07-29)
+#### v0.1(2017-07-29)
 
 * release version 0.1
 
