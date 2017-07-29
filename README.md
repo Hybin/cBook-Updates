@@ -20,11 +20,15 @@ The **Script Filter** is based on Python 3 while Alfred 3 support Python 2.x onl
 
 First install Python 3 on your computer, then run shell:
 
+```Shell
 	$ echo $PATH
+```
 
 and you will get something like this:
 
+```Shell
 	/usr/bin:/usr/local/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Python.framework/Versions/3.5/bin:
+```
 
 Now with the directory `/Library/Frameworks/Python.framework/Versions/3.5/bin`, you are able to find the exec `Python3.5`. 
 - Click the Alfred 3 -> Preferences -> Workflows
@@ -58,7 +62,7 @@ The workflow requires constant internet connection.
 
 ## ChangeLog
 
-###v0.1(2017-07-29)
+### v0.1(2017-07-29)
 
 * release version 0.1
 
